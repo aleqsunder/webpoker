@@ -36,7 +36,7 @@
         username: '',
 
         imagePrecache: [
-          '/assets/backflip.jpg'
+          'assets/backflip.jpg'
         ]
       }
     },
