@@ -1,0 +1,66 @@
+.player {
+  &-controls {
+    display: flex;
+    width: 500px;
+    margin-bottom: 16px;
+    grid-gap: 16px;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  &-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    zoom: .8;
+
+    &__info {
+      display: flex;
+      justify-content: center;
+
+      width: 100%;
+      grid-gap: 16px;
+      margin-top: 16px;
+
+      &-background {
+        width: 120px;
+        background-color: #efefef;
+        padding: 8px 12px;
+        border-radius: 4px;
+      }
+
+      &-label {
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      &-counter {
+        font-size: 24px;
+      }
+    }
+
+    &__cards {
+      perspective: 1000px;
+      display: flex;
+      grid-gap: 16px;
+    }
+  }
+}
+
+.list-complete-item {
+  transition: all 0.15s ease;
+}
+
+.list-complete-enter-from,
+.list-complete-leave-to {
+  opacity: 0;
+  transform: translateY(32px);
+  z-index: 0;
+}
+
+.list-complete-leave-active {
+  position: absolute;
+}

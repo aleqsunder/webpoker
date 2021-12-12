@@ -1,0 +1,44 @@
+.menu {
+  background-color: rgba(0,0,0,.7);
+  padding: 36px;
+  border-radius: 4px;
+
+  &__button {
+    padding: 12px;
+    background-color: rgba(255,255,255,.04);
+    color: #dbdbdb;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color .1s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    &-green {
+      color: rgb(51, 227, 11);
+    }
+
+    &-red {
+      color: rgb(227, 11, 11);
+    }
+
+    &:hover, &:active {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  }
+
+  &__name {
+    background: unset;
+    outline: none;
+    color: #eee;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255,255,.1);
+    margin-bottom: 12px;
+    padding: 6px 3px;
+    transition: background-color .1s;
+
+    &:hover, &:active {
+      border-bottom: 1px solid rgba(255, 255,255,.2);
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: space-between;
+
+  width: 160px;
+  height: 240px;
+  background-color: #efefef;
+  border-radius: 6px;
+  padding: 14px;
+
+  &--reverted {
+    transform: rotate(180deg);
+  }
+
+  &--reversed {
+    z-index: 2;
+    transform: rotateY(180deg);
+    background: url('/assets/backflip.jpg') no-repeat center center;
+    background-size: cover;
+  }
+
+  &__initial {
+    font-size: 32px;
+  }
+
+  &__type {
+    display: flex;
+
+    img {
+      width: 18px;
+    }
+  }
+
+  &__side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36px;
+  }
+
+  &__image-logo {
+    width: 60%;
+  }
+
+  &__wrapper {
+    perspective: 1000px;
+    width: 160px;
+    height: 240px;
+    padding: 14px;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: transform .2s;
+
+    &-hidden {
+      transform: rotateY(180deg);
+    }
+  }
+}
