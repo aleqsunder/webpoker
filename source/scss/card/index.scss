@@ -5,6 +5,7 @@
   transform-style: preserve-3d;
   display: flex;
   justify-content: space-between;
+  backface-visibility: hidden;
 
   width: 160px;
   height: 240px;
